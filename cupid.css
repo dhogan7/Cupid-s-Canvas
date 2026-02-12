@@ -54,3 +54,121 @@
 body {
     font-family: 'Geraldine', sans-serif; /* Fallback to a default font */
 }
+
+#scene {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to top, #0b0033, #330066);
+    overflow: hidden;
+}
+
+.moon {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    width: 120px;
+    height: 120px;
+    background: #fff8dc;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #fff8dc;
+}
+
+
+.cloud {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background: white;
+    border-radius: 50px;
+    opacity: 0.6;
+    animation: drift 40s linear infinite;
+}
+
+.cloud1 { top: 100px; left: -200px; }
+.cloud2 { top: 150px; left: -300px; }
+
+@keyframes drift {
+    from { transform: translateX(0); }
+    to { transform: translateX(120vw); }
+}
+
+.tree {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 200px;
+    background: var(--chocolate);
+    transform-origin: bottom;
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+.tree1 { left: 10%; }
+.tree2 { left: 80%; }
+
+@keyframes sway {
+    from { transform: rotate(-3deg); }
+    to { transform: rotate(3deg); }
+}
+
+.couple {
+    position: absolute;
+    bottom: 50px;
+    left: -200px;
+    width: 100px;
+    height: 150px;
+    background: pink;
+    border-radius: 20px;
+    animation: walk 30s linear infinite;
+}
+
+@keyframes walk {
+    from { transform: translateX(0); }
+    to { transform: translateX(120vw); }
+}
+
+.dog {
+    position: absolute;
+    bottom: 40px;
+    left: -250px;
+    width: 60px;
+    height: 40px;
+    background: brown;
+    border-radius: 10px;
+    animation: walk 30s linear infinite;
+}
+
+.bike {
+    position: absolute;
+    bottom: 70px;
+    left: -300px;
+    width: 80px;
+    height: 50px;
+    background: lightblue;
+    border-radius: 10px;
+    animation: ride 20s linear infinite;
+}
+
+@keyframes ride {
+    from { transform: translateX(0); }
+    to { transform: translateX(120vw); }
+}
+
+.firefly {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px yellow;
+    animation: blink 2s infinite alternate;
+}
+
+.f1 { top: 60%; left: 30%; }
+.f2 { top: 50%; left: 50%; }
+.f3 { top: 65%; left: 70%; }
+
+@keyframes blink {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+

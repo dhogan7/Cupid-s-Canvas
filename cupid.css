@@ -172,3 +172,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.end-page {
+    background-image: url("assets/images/clouds_heart.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

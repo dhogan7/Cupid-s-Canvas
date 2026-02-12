@@ -31,13 +31,7 @@
 }
 
 /* CSS-only page navigation with :target */
-.page {
-    display: none;
-}
 
-.page:target {
-    display: block;
-}
 
 /* Heart animation example */
 @keyframes heartbeat {

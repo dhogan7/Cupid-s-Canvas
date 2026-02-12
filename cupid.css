@@ -1,3 +1,11 @@
+/* Import the GERALDINE font */
+@font-face {
+    font-family: 'Geraldine';
+    src: url('./fonts/GERALDINE.ttf') format('truetype'); /* Adjust the path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Valentine's Day Color Palette & Variables */
 :root {
     --cupid-pink: #ffafcc;
@@ -11,33 +19,38 @@
     --space-2: 0.5rem;
     --space-3: 1rem;
     --space-4: 2rem;
-  }
-  
-  /* Reduced Motion Preferences */
-  @media (prefers-reduced-motion: reduce) {
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
     * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition: none !important;
     }
-  }
-  
-  /* CSS-only page navigation with :target */
-  .page {
+}
+
+/* CSS-only page navigation with :target */
+.page {
     display: none;
-  }
-  
-  .page:target {
+}
+
+.page:target {
     display: block;
-  }
-  
-  /* Heart animation example */
-  @keyframes heartbeat {
+}
+
+/* Heart animation example */
+@keyframes heartbeat {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-  }
-  
-  .heart {
+}
+
+.heart {
     animation: heartbeat 1.5s ease-in-out infinite;
-  }
+}
+
+/* Example usage of the Geraldine font */
+body {
+    font-family: 'Geraldine', sans-serif; /* Fallback to a default font */
+}
